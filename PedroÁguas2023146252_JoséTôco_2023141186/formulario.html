@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloformulario.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton&family=Nunito+Sans:opsz,wght@6..12,300&family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+
+    <br><br><br>
+    <div class="conteudo">
+                        <div class="volta">
+                <a href="index.html">&larr;</a>
+                </div>
+
+        <div class="donate">
+
+
+            <form>
+                <div class="row1">
+                    <div class="btnum">
+                        <input type="button" id="btndoacaounica" value="Doação Única">
+                    </div>
+
+                    <div class="btndois">
+                        <input type="button" id="btndoacaomensal" value="Doação Periódica">
+                    </div>
+
+
+                    
+                    <div class="btndosmontantespredefenidos">
+                        <input type="button" id="btnvinte" value="20€">
+                        <input type="button" id="btnquarenta" value="40€">
+                    </div>
+
+                    <div class="btndosmontantespredefenidosoitenta">
+                        <input type="button" id="btnoitenta" value="80€">
+                        <input type="number" id="txtoutro" placeholder="Montante à escolha">
+                    </div>
+
+
+
+                    <div class="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="email">
+                        <input type="email" id="email" placeholder="Escreva o seu email" required>
+                    </div>
+
+
+                    
+                    <div class="btnprivadoeparticular">
+                        <input type="button" id="btnempresa" value="Empresa">
+                        <input type="button" id="btnparticular" value="Particular">
+                    </div>
+
+                    <div id="Destino">
+                        <label for="destinodoacao"> Destino da Doação: </label>
+                        <select id="destinodoacao">
+                            <option value="opt1">Afeganistão</option>
+                            <option value="opt2">Nigéria</option>
+                            <option value="opt3">Sudão do Sul</option>
+                            <option value="opt4">Libano</option>
+                            <option value="opt5">Etiópia</option>
+                            <option value="opt6">Haiti</option>                    
+                        </select>
+
+                    </div>
+
+                    <div class="particulareempresa">
+
+                        <div id="idnome">                        
+                            <label for="nome">Primeiro Nome: </label>
+                            <input type="text" id="nome" placeholder="Escreva o seu primeiro nome" required>
+                        </div>
+                        
+                        <div id="idapelido">
+                            <label for="apelido" id="labelapelido">Apelido: </label>
+                            <input type="text" id="apelido" placeholder="Escreva o seu apelido" required>   
+                        </div>
+
+                        <div id="idnumero">
+                            <label for="numero">Nº telemovel: </label>
+                            <input type="number" id="numero" placeholder="Escreva o seu numero de telemovel" required>
+                        </div>
+
+                        <div id="idnif">
+                            <label for="nif">Nif: </label>
+                            <input type="number" id="nif" placeholder="Escreva o seu NIF (Numero de Identificação Fiscal)" required>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div id="morada">
+                        <div>
+                            <label for="nomemorada">Morada Completa: </label>
+                            <input type="text" id="nomemorada" placeholder="Escreva aqui a sua morada">
+                        </div>
+                        <div>
+                            <label for="rua">Rua:</label>
+                            <input type="text" id="rua" placeholder="Escreva aqui a sua rua">
+                        </div>
+                        
+                        <div class="moradadois">
+                            <label for="codigopostal" for="codigopostaldois">Código-Postal:</label>
+                            <input type="number" id="codigopostal" placeholder="XXXX">
+                            -
+                            <input type="number" id="codigopostaldois" placeholder="XXXX">
+                        </div>
+
+                        <div>
+                            <label for="pais">País:</label>
+                            <input type="text" id="pais" placeholder="Escreva aqui o seu País">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            
+
+        </div>
+
+        <div class="pagamento">
+            <h1>Escolha o método de pagamento</h1>
+            <div class="metodos">
+                <div class="button-container"><input type="button" id="CD" value="Débito Direto"></div>
+                <div class="button-container"><input type="button" id="CC" value="Cartão de Crédito"></div>
+                <div class="button-container"><input type="button" id="Paypal" value="Paypal"></div>
+                <div class="button-container"><input type="button" id="Multibanco" value="Multibanco"></div>
+                <div class="button-container"><input type="button" id="Mbway" value="MbWay"></div>
+            </div>
+
+
+                <div class="classeiban">
+                    <label for="Iban" id="labeliban">Iban</label>
+                    <input type="number" id="Iban" placeholder="Escreva aqui o seu Iban">
+
+                </div>
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------- -->
+                <!-- <button id="botao" onclick="openPopup()">Fazer Doação</button> -->
+                <input type="submit" id="botao" onclick="openPopup()" value="Fazer Doação">
+                <!-- Overlay and Popup -->
+                <div class="overlay" id="overlay">
+                    <div class="popup">
+                        <h2>Doação </h2>
+                        <p id="paragrafo">Por favor preencha todos os campos relacionados ao monstante</p>
+                        <p id="paragrafodois"> </p>
+
+                    <button onclick="closePopup()">Fechar</button>
+                    </div>
+                </div>         
+                
+            </form>
+        </div>
+
+        
+
+    </div>
+
+  <!-- Button to activate the popup -->
+    <script type="text/javascript" src="funcionamentoformulario.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton&family=Nunito+Sans:opsz,wght@6..12,300&family=Source+Sans+3:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ----------------------------------------- -->
+    <!-- NavBar -->
+    <div class="navbar">
+        <div>
+            <img class="logo" src="images/logotipo.png" alt="">
+        </div>
+        <div class="menu-section">
+            WHO WE ARE
+            <div class="submenu">
+                <a href="#">Mission and Values</a>
+                <a href="#">Our Team</a>
+                <a href="#">Our Impact</a>
+                <a href="#">Our Approach</a>
+                <a href="#">Careers</a>
+                <a href="#">Refugee Stories</a>
+                <a href="#">Our History</a>
+                <a href="#">Where we Work</a>
+                <a href="#">Impact Reports</a>
+                <a href="#">Who We Serve</a>
+                <a href="#">Partners</a>
+                <a href="#">Financials</a>
+                <a href="#">2023-2027 Strategy</a>
+                <a href="#">Contact</a>
+                <a href="#">Awards</a>
+                <a href="#">FAQs</a>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            OUR WORK
+            <div class="submenu2">
+                <a href="#">Self-Reliance</a>
+                <a href="#">Resettlement</a>
+                <a href="#">Other PathWays to safety</a>
+                <a href="#">Urban Refugee Protection</a>
+                <div> </div>
+                <a href="#">Labor Mobility</a>
+                <a href="#">Refuge Self-Reliance Initiative</a>
+                <div> </div>
+                <a href="#">Family Reunification</a>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            LATEST
+            <div class="submenu3">
+                <a href="#">News</a>
+                <a href="#">Videos</a>
+                <a href="#">Publications</a>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            WAYS TO GIVE
+        </div>
+
+
+        <div class="btnOrange">
+            <a href="formulario.html" id="donate">DONATE</a>
+        </div>
+
+        <div class="icone-menu">
+            <a onclick=ShowSideBar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 -960 960 960" width="30">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg></a>
+        </div>
+    </div>
+    </div>
+    <!-- ---------------------------------- -->
+    <!--SideBar-->
+    <div class="sidebar">
+        <div class="menu-sidebar1">
+            <div class="btnOrange">DONATE</div>
+        </div>
+
+        <div class="icone-close">
+            <a onclick=CloseSideBar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 -960 960 960" width="26">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg></a>
+        </div>
+
+        <div class="menu-sidebar2">
+            OUR WORK
+            <div class="sub-sidebar">
+                <a href="#">Our Impact</a>
+                <a href="#">Partners</a>
+                <a href="#">Refugee Stories</a>
+                <a href="#">Self-Reliance</a>
+                <a href="#">Urban Refugee Protection</a>
+                <a href="#">Resettlement</a>
+                <a href="#">Where we Work</a>
+                <a href="#">Other PathWays to safety</a>
+                <a href="#">Labor Mobility</a>
+                <a href="#">Family Reunification</a>
+            </div>
+        </div>
+
+        <div class="menu-sidebar3">
+            WHO WE ARE
+            <div class="sub-sidebar">
+                <a href="#">Mission and Values</a>
+                <a href="#">Our Approach</a>
+                <a href="#">Our History</a>
+                <a href="#">Who We Serve</a>
+                <a href="#">Team</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQs</a>
+                <a href="#">2023-2027 Strategy</a>
+                <a href="#">Careers</a>
+                <a href="#">Awards</a>
+            </div>
+        </div>
+
+        <div class="menu-sidebar4">
+            LATEST
+            <div class="sub-sidebar">
+                <a href="#">News & Media</a>
+                <a href="#">Impact Reports</a>
+                <a href="#">Publications</a>
+            </div>
+        </div>
+
+        <div class="menu-sidebar5">
+            WAYS TO GIVE
+        </div>
+    </div>
+    <!--Fim SideBar-->
+
+    <!-- navbar -->
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <!-- imagem que passa -->
+    <div class="image-container">
+        <button id="prevButton" class="buttons" onclick="changeContent(-1)">&#9665;</button>
+        <button id="nextButton" class="buttons" onclick="changeContent(1)">&#9655;</button>
+
+        <img id="mainImage" src="images/1aimg.jpg">
+        <div class="text-overlay">
+            <h1 id="mainHeading">Join the Movement to Reunite 1 Million Refugee Families</h1>
+            <p id="mainText">Together, we can reunite more mothers with their children, like Samira and Omer, and
+                support other refugees seeking safety.</p>
+            <a id="mainLink" href="#">MAKE AN END-OF-YEAR GIFT &rarr;</a>
+        </div>
+    </div>
+
+    <div class="textoseforminimizado">
+        <h1 id="titulominimizado">Join the Movement to Reunite 1 Million Refugee Families</h1>
+        <p id="paragrafominimizado">Together, we can reunite more mothers with their children, like Samira and Omer, and
+            support other
+            refugees seeking safety.</p>
+        <a id="linkminimizado" href="#">MAKE AN END-OF-YEAR GIFT -></a>
+    </div>
+    <!-- imagem que passa -->
+    <!-- ----------------------------------------------------- -->
+    <!-- retangulo azul -->
+
+    <div class="retanguloazul">
+        <div class="tituloretangulo">
+            <h1>Mission</h1>
+        </div>
+        <div class="textoretangulo">
+            <p>RefugePoint advances lasting solutions for refugees and supports the humanitarian community to do the
+                same.</p>
+        </div>
+    </div>
+
+
+    <br>
+
+    <!-- retangulo azul -->
+    <!------------------------------------------------------------------- -->
+    <!-- why refugees -->
+
+    <br><br><br>
+
+
+    <div class="refugiados">
+
+        <div class="whyrefugees">
+            <h1>Why Refugees</h1>
+            <p>We focus on finding lasting solutions for at-risk refugees.
+                We believe that everyone benefits when refugees are given
+                a chance to use their talents and skills to contribute to their
+                host countries and to the world.
+            </p>
+            <!-- <a class="butao" href="#">Learn More</a> -->
+            <div class="btnOrange">Learn More</div>
+
+        </div>
+
+        <div class="twentyyears">
+            <img src="images/WR_tempo.jpg" alt="">
+            <p>The average length of time before a refugee can return home.</p>
+        </div>
+
+        <div class="onehundredandeight">
+            <img src="images/WR_pessoas.jpg" alt="">
+            <p>Forcibly displaced people worldwide, including 35 million refugees.</p>
+        </div>
+
+    </div>
+
+
+    <!-- why refugees -->
+    <!-- ------------------------------------------------ -->
+    <!-- YADASA -->
+
+    <br><br><br><br>
+
+    <div class="retangulodomiudo">
+
+        <div class="imagemYadasa">
+            <img class="imagemdefundo" src="images/imagemdefundo.jpg" alt="">
+        </div>
+
+
+        <div class="textoYadasa">
+            <a class="paragrafoYADASA">I have no more worries, no more stress, and no more fear. Here, I am a very happy
+                person. Here, there is no threat against my life, and I am looking forward to starting my Ph.D. very
+                soon.</a>
+            <br><br><br>
+            <a class="nomeyadasa">YADASA</a>
+            <br><br>
+            <a class="linkyadasa" href="#">READ THE FULL HISTORY</a>
+        </div>
+
+    </div>
+
+
+    <br><br><br><br><br>
+    <!-- YADASA -->
+    <!-- -------------------------------------------------- -->
+    <!-- Our Tactics -->
+
+    <div class="OT">
+        <div class="tituloOT">
+            <h1>Our Tactics</h1>
+            <p>We take a three-pronged approach to achieving impact:</p>
+        </div>
+
+        <div class="primeirotexto">
+            <p><span>Direct Services:</span> Providing services to meet the needs of individuals and households.</p>
+        </div>
+
+        <div class="monitorum">
+            <img src="images/OTImagens/miuda e senhora.jpg" alt="">
+        </div>
+
+
+        <div class="segundotexto">
+            <p><span>Field Building:</span> Supporting other organizations to accelerate and expand programs for
+                reaching refugee populations.</p>
+        </div>
+        <div class="monitordois">
+            <img src="images/OTImagens/conferencia.jpg" alt="">
+        </div>
+
+        <div class="terceirotexto">
+            <p><span>Systems Change:</span> Influencing policy and decision-makers to drive large-scale change.</p>
+        </div>
+
+        <div class="monitortres">
+            <img src="images/OTImagens/palestra.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- Our Tactics -->
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- Refugee Solutions -->
+
+    <br> <br><br><br><br>
+
+    <div class="Refugee_Solutions">
+
+        <div class="titulogiro">
+            <h1>Refugee Solutions</h1>
+            <p>We help refugees to find lasting solutions through self-reliance (helping them to meet their own
+                essential needs) and through resettlement and other pathways to safety such as relocation for
+                employment, education, and family reunification.</p>
+        </div>
+
+        <div class="primeiroespacos">
+            <h1>Resettlement and Other Pathways to Safety</h1>
+            <p>Resettlement involves permanently relocating refugees to a safe country where they can rebuild their
+                lives. It is often the best option for refugees who cannot return home and cannot reside safely in the
+                country to which they have fled. RefugePoint identifies at-risk refugees and connects them with
+                resettlement opportunities. Once they are referred to a receiving government, other agencies take over
+                the resettlement process from there. We also help refugees to access other pathways to safety, such as
+                relocation for employment, education, and family reunification.</p>
+            <br>
+            <button class="cylinder-button">Explore</button>
+
+            <br> <br> <br>
+            <img src="images/RS/solutionsR-fade.jpg" alt="">
+
+        </div>
+
+
+
+
+
+        <div class="segundoespacos">
+            <h1>Self-Reliance</h1>
+            <p>Self-reliance involves stabilizing refugees in the countries to which they have fled and helping them to
+                advance, socially and economically, so that they can meet their essential household needs. Most refugees
+                won’t have the opportunity to resettle or return to their homes. However, given the right supports, many
+                refugees are able to rebuild their lives in the host country to which they have fled.</p>
+            <button class="cylinder-button">Explore</button>
+        </div>
+
+
+        <div class="segundaimagem">
+            <img src="images/RS/SolutionsSR-fade.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="button-container">
+
+    </div>
+
+    <!-- Refugee Solutions -->
+    <!-- ---------------------- -->
+    <!-- Self-Reliance Initiative -->
+
+    <div class="teste">
+        <div class="SelfRelianceInitiative">
+            <h1>Self-Reliance Initiative</h1>
+            <p>The Refugee Self-Reliance Initiative is a collaboration among NGOs, UNHCR, foundations,
+                government agencies, the private sector and others that aims to support refugees to achieve
+                a better quality of life and regain agency over their finances and futures, while at the same
+                time supporting the peace, stability and prosperity goals of the hosting countries. The Initiative
+                is focused on promoting self-reliance opportunities for refugees around the world to enjoy
+                lives of dignity and hope, even during protracted periods of limbo in their host countries.</p>
+            <a href="#">READ MORE</a>
+
+        </div>
+    </div>
+
+
+    <!-- Self-Reliance Initiative -->
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Cartas que viram -->
+
+    <br><br><br><br><br>
+
+    <div class="vira">
+
+        <div class="titulocartas">
+            <h3>Our Impact</h3>
+        </div>
+
+        <div class="card">
+            <div class="side front">
+                <div class="backgrounddaimagem">
+                    <img src="images/amizade_1.png" alt="">
+                </div>
+                <h3>119,175</h3>
+                <p>Since 2005, we've helped 119,745 refugees to access resettlement, self-reliance, and other pathways
+                    to safety.</p>
+
+                <div class="flipthecard">
+                    FLIP THE CARD
+                </div>
+
+            </div>
+
+            <div class="side back">
+                <p>We have directly helped 119,745 refugees to access pathways to relocate to safety through
+                    resettlement, family reunification, work visas, and education visas. Through our self-reliance,
+                    field-building and systems change activities, our work has benefitted tens of thousands more.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+
+        </div>
+
+        <div class="carddois">
+            <div class="side frontum">
+                <div class="backgrounddaimagemdois">
+                    <img src="images/salve-o-mundo.png" alt="">
+                </div>
+
+                <h3>346</h3>
+                <p>Since 2005, we have worked with refugees in 346 locations across 63 countries worldwide.</p>
+                <div class="flipthecarddois">
+                    FLIP THE CARD
+                </div>
+
+            </div>
+
+            <div class="side backum">
+                <p>As of the end of 2022, we had worked with refugees in 346 locations across 63 countries in Africa,
+                    Southeast Asia, Central America, and the Middle East. We actively work to reach locations and
+                    refugee populations that have been underserved by the refugee response system. </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- Cartas que viram -->
+    <!-- ---------------------------------------------- -->
+    <!-- News -->
+
+    <div class="in-the-news">
+        <div class="news-title">
+            <h1>In The News</h1>
+            <p> Stay up to date on RefugePoint in the news.</p>
+
+        </div>
+
+        <div class="news1">
+            <div class="container-img-news">
+                <img class="img-news" src="images/news1.jpg" alt="...">
+            </div>
+            <div class="conteudo-news">
+                <a class="sub-titulo-news" href="#">5 Key Takeaways from the 2023 Global Refugee Forum</a>
+                <p class="texto-news">Sasha Chanoff, Founder and CEO of RefugePoint, announces the Family Reunification
+                    pledge during the Global Refugee Forum 2023. Photo: UNHCR </p>
+            </div>
+            <div class="read-more-news">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="news2">
+            <div class="container-img-news">
+                <img class="img-news" src="images/news2.jpg" alt="...">
+            </div>
+
+            <div class="conteudo-news">
+                <a class="sub-titulo-news" href="#">Two New Milestones For RefugePoint’s Labor Mobility Team</a>
+                <p class="texto-news">EMPP Candidates who departed for Canada in October from L to R: Adifatah Abdulle
+                    Sabriye, Alamin Manji Musa, Sylvia Kamencu (RefugePoint’s Manager of Compl...</p>
+            </div>
+
+            <div class="read-more-news">
+                <a href="#">Read More</a>
+            </div>
+
+        </div>
+
+        <div class="news3">
+
+            <div class="container-img-news">
+                <img class="img-news" src="images/news3.jpg" alt="...">
+            </div>
+
+            <div class="conteudo-news">
+                <a class="sub-titulo-news" href="#">Who We Are</a>
+            </div>
+
+            <div class="read-more-news">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- News -->
+    <!-- -------------------------------------- -->
+    <!-- Imagem do footer -->
+
+    <div class="imagemfooter">
+        <img src="images/footer5.jpg" alt="">
+    </div>
+
+    <!-- Imagem do footer -->
+    <!-- ------------------------------------------------- -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="container-social">
+                <div class="subscribe"> Subscribe to our Newsletter</div>
+                <div class="email">
+                    <form class="subscribe-form">
+                        <input class="emailbar" type="text" placeholder="emailaddress@company.com" />
+                        <button class="go" type="submit">Go</button>
+                    </form>
+                </div>
+                <div class="connect"><a>connect with us</a>
+                    <button class="facebook" type="submit"> <img src="images/iconfacebook.png"> </button>
+                    <button class="twitter" type="submit"> <img src="images/icontwitter.png"> </button>
+                    <button class="instagram" type="submit"> <img src="images/iconinstagram.png"> </button>
+                </div>
+            </div>
+
+            <div class="container-references">
+                <div class="refuge_left">
+                    <div class="logo-white">
+                        <img src="images/logofooter.png" alt="logo">
+                    </div>
+                    <div>
+                        <p class="li1">RefugePoint advances lasting solutions for at-risk refugees, and supports the
+                            humanitarian community to do the same.</p>
+                    </div>
+                    <div class="logo-charity">
+                        <img src="images/selo1.jpg" alt="logo">
+                        <img src="images/selo2.jpg" alt="logo">
+                    </div>
+                </div>
+                <div class="refuge_listas">
+                    <nav class="main_nav">
+                        <ul class="menu-footer">
+                            <ul class="submenu_l2">
+                                <li class="l2_main">
+                                    <a class="main_l2">Our Work</a>
+                                    <ul class="submenu_l2_1">
+                                        <li class="">
+                                            <a class=""> Who We Serve</a>
+                                        </li>
+                                        <li class=" ">
+                                            <a class=" ">Our Approach</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="">Our Impact</a>
+                                        </li>
+                                        <li class=" ">
+                                            <a class="">Partners</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="">Refugee Stories</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="">Resettlement</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="">Self-Reliance</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="">Refugee Self-Reliance Initiative</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="">Where We Work</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="submenu_l3">
+                                <li class="l3_main">
+                                    <a class="main_l3">About Us</a>
+                                    <ul class="submenu_l3_1">
+                                        <li class="">
+                                            <a class=""> Mission and Values</a>
+                                        </li>
+                                        <li class=" ">
+                                            <a class=" ">Awards</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="">Careers</a>
+                                        </li>
+                                        <li class=" ">
+                                            <a class="">Contact</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="">FAQs</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="">Team</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="submenu_l4">
+                                <li class="l4_main">
+                                    <a class="main_l4">Resources</a>
+                                    <ul class="submenu_l4_1">
+                                        <li class="">
+                                            <a class=""> News & Media</a>
+                                        </li>
+                                        <li class=" ">
+                                            <a class=" ">Impact Reports</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="">Publications</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="refuge_right">
+                    <ul class="submenu_l5">
+                        <li class="l5_main">
+                            <a class="main_l5">Recent Tweets</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="Copyright">
+                <p class="copyright"><i>
+                        &copy; Copyright 2023, RefugePoint
+                        <span class="separator">|</span> All Rights Reserved
+                        <span class="separator">|</span> Registered 501(c)(3).
+                        <span class="separator"></span> EIN: 20-2061482
+                    </i>
+                </p>
+            </div>
+    </footer>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()"></button>
+
+    <script type="text/javascript" src="funcionamento.js"></script>
+    
+
+</body>
+
+</html>

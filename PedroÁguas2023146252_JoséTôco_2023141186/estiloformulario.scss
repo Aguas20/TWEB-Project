@@ -1,0 +1,483 @@
+body{
+    color: black;
+    background-image: url(images/donate.jpg);
+    background-size: cover;
+}
+
+
+
+
+    /* Styles for the overlay */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+      }
+  
+      /* Styles for the popup */
+      .popup {
+                h2{
+                    font-family: 'Neuton', sans-serif;
+                    font-size: 33px;
+                    text-align: center;
+                }
+                p{
+                    font-family: 'Source Sans 3';
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+      }
+      
+
+      .volta{
+                    width: 25px;
+                    border-radius: 25px;
+
+            a{
+                background-color: rgba(255, 255, 255, 0.5);
+                color: black;
+                text-decoration: none;
+                display: flex;
+                justify-self: center;
+                padding-left: 3px;
+                border-radius: 50%;
+
+
+            }  
+
+      }
+
+
+.conteudo{
+
+
+
+
+    display: grid;
+    grid-template-columns: 30% 500px 30%;
+    grid-template-rows:1fr 10px 300px;
+    grid-template-areas:
+    ". donativo ."
+    ". . ."
+    ". pagamento .";
+
+
+    .pagamento{
+        border-radius: 7%;
+        grid-area: pagamento;
+        background-color: rgba(255, 255, 255, 0.9); 
+        color: black;
+
+        #botao {
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: bold;
+            width: 40%;
+            display: block; /* Change from flex to block */
+            margin: 0 auto; /* Center the button horizontally */
+            height: 40px;
+            
+
+            text-align: center;
+            font-size: 20px;
+            background-color: white;
+            border: 1px solid rgba(79, 79, 79, 0.3);
+            border-radius: 5%;
+          
+            &:hover {
+              background-color: rgba(255, 165, 0, 0.5);
+            }
+          }
+    
+
+
+        .classeiban{
+            display: flex;
+            flex-direction: row; /* Stack buttons vertically */
+            align-items: center; /* Center the buttons horizontally */
+            justify-content: center;
+            margin-top: 50px;
+
+
+            font-family: 'Source Sans 3';
+            font-size: 18px;
+            width: 100%;
+            font-weight: 600;
+
+            #Iban{
+                font-family: 'Source Sans 3';
+                font-size: 18px;
+                width: 60%;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+
+        h1{
+            font-family: 'Neuton', sans-serif;
+            font-size: 25px;
+            line-height: 64px;
+            letter-spacing: 1px;
+        }
+
+        .metodos {
+            
+            display: flex;
+            flex-direction: row; /* Stack buttons vertically */
+            align-items: center; /* Center the buttons horizontally */
+            justify-content: center;
+
+            
+            .button-container {
+                margin-right: 30px; /* Adjust the margin as needed */
+              }
+
+            #CD, #CC, #Paypal, #Mbway, #Multibanco{
+                font-family: 'Source Sans 3', sans-serif;
+                font-weight: bold;
+
+                width:100%;
+                height:40px;
+                font-size: 20px;
+                background-color: white;
+                border: 1px solid rgba(79, 79, 79, 0.3);;
+                border-radius: 5%;
+                
+
+                &:hover{
+                    background-color: rgba(255, 165, 0, 0.5);
+                }
+            }
+
+          }
+
+        h1{
+            text-align: center;
+        }
+    }
+
+
+
+ 
+
+    .donate{
+        border-radius: 7%;
+        background-color: rgba(255, 255, 255, 0.9); 
+        grid-area: donativo;
+
+        padding-bottom: 50px;
+
+        .btnum{
+            padding-top: 20px;
+            display:flex;
+            position: relative;
+            justify-content: center;
+
+            #btndoacaounica{
+                font-family: 'Source Sans 3', sans-serif;
+                font-weight: bold;
+
+                width:90%;
+                height:40px;
+                font-size: 20px;
+                background-color: white;
+                border: 1px solid rgba(79, 79, 79, 0.3);;
+                border-radius: 5%;
+                &:hover{
+                    background-color: rgba(255, 165, 0, 0.5);
+                }
+            }
+        }
+
+        .btndois
+        {
+
+            display:flex;
+            position: relative;
+            justify-content: center;
+            margin-top: 15px;
+
+
+            #btndoacaomensal{
+                font-family: 'Source Sans 3', sans-serif;
+                font-weight: bold;
+
+                width:90%;
+                height:40px;
+                font-size: 20px;
+                background-color: white;
+                border: 1px solid rgba(79, 79, 79, 0.3);;
+                border-radius: 5%;
+                &:hover{
+                    background-color: rgba(255, 165, 0, 0.5);
+                }
+                
+
+            }
+        }
+
+        .btndosmontantespredefenidos{
+            padding-top: 20px;
+            display:flex;
+            position: relative;
+            justify-content: center;
+
+            #btnvinte{
+                font-family: 'Source Sans 3', sans-serif;
+                font-weight: bold;
+                width:40%;
+                height:40px;
+                font-size: 20px;
+                background-color: white;
+                border: 1px solid rgba(79, 79, 79, 0.3);;
+                border-radius: 5%;
+
+                &:hover{
+                    background-color: rgba(255, 165, 0, 0.5);
+                }
+            }
+
+            #btnquarenta{
+                margin-left: 3px;
+
+                font-family: 'Source Sans 3', sans-serif;
+                font-weight: bold;
+                width:40%;
+                height:40px;
+                font-size: 20px;
+                background-color: white;
+                border: 1px solid rgba(79, 79, 79, 0.3);;
+                border-radius: 5%;
+
+                &:hover{
+                    background-color: rgba(255, 165, 0, 0.5);
+                }
+            }
+
+
+
+            
+
+        }
+
+        .btndosmontantespredefenidosoitenta{
+            display:flex;
+            position: relative;
+            justify-content: center;
+            margin-top: 3px;
+
+            #btnoitenta
+            {
+                font-family: 'Source Sans 3', sans-serif;
+                font-weight: bold;
+                width:40%;
+                height:40px;
+                font-size: 20px;
+                background-color: white;
+                border: 1px solid rgba(79, 79, 79, 0.3);;
+                border-radius: 5%;
+
+                &:hover{
+                    background-color: rgba(255, 165, 0, 0.5);
+                }
+
+                margin-bottom: 15px;
+            }
+
+            #txtoutro
+            {
+                margin-left: 3px;
+
+                font-family: 'Source Sans 3', sans-serif;
+                font-weight: bold;
+                width:38%;
+                height:40px;
+                font-size: 18px;
+                text-align: center;
+                background-color: white;
+                border: 1px solid rgba(79, 79, 79, 0.3);;
+                border-radius: 5%;
+            }
+        }
+
+        .email{
+            
+            color: black;
+            margin-left: 5%;
+            label{
+                font-family: 'Source Sans 3';
+                font-size: 18px;
+                font-weight: 600;
+
+            }
+
+            #email{
+                font-family: 'Source Sans 3';
+                font-size: 18px;
+                width: 90%;
+                font-weight: 600;
+            }
+        }
+     
+        
+        .btnprivadoeparticular{
+            padding-top: 20px;
+            display:flex;
+            position: relative;
+            justify-content: center;
+
+            #btnempresa{
+                font-family: 'Source Sans 3', sans-serif;
+                font-weight: bold;
+                width:40%;
+                height:30px;
+                font-size: 20px;
+                background-color: white;
+                border: 1px solid rgba(79, 79, 79, 0.3);;
+                border-radius: 5%;
+
+                &:hover{
+                    background-color: rgba(255, 165, 0, 0.5);
+                }
+            }
+
+            #btnparticular{
+                margin-left: 3px;
+
+                font-family: 'Source Sans 3', sans-serif;
+                font-weight: bold;
+                width:40%;
+                height:30px;
+                font-size: 20px;
+                background-color: white;
+                border: 1px solid rgba(79, 79, 79, 0.3);;
+                border-radius: 5%;
+
+                &:hover{
+                    background-color: rgba(255, 165, 0, 0.5);
+                }
+            }
+        }
+
+        .particulareempresa{
+            margin-top: 5px;
+            margin-left: 5%;
+            margin-bottom: 8px;
+
+            #idnome, #idapelido, #idnumero, #idnif{
+                 margin-top: 5px;
+
+                 
+             }
+            
+            label{
+
+                font-family: 'Source Sans 3';
+                font-size: 18px;
+                font-weight: 600;
+                padding-left: 0%;
+
+
+            }
+
+
+            #nome , #apelido , #numero , #nif{
+                font-family: 'Source Sans 3';
+                font-size: 18px;
+                width: 60%;
+                font-weight: 600;
+
+            }
+
+            #nome{
+                margin-left: 25px;
+            }
+             #apelido{
+                 margin-left: 80px;
+                 margin-top: 5px;
+             }
+            #numero{
+                margin-left: 42px;
+            }
+            #nif{
+                margin-left: 115px;
+            }
+
+
+        }
+
+
+        #morada{
+
+            margin-left: 5%;
+            margin-top: 10px;
+
+            #nomemorada{
+                margin-left: 7px;
+            }
+
+            #rua{
+                margin-left: 107px;
+            }
+            #pais{
+                margin-left: 105px;
+            }
+
+            #codigopostal{
+                margin-left: 33px;
+            }
+
+            label{
+
+                font-family: 'Source Sans 3';
+                font-size: 18px;
+                font-weight: 600;
+                padding-left: 0%;
+            }
+
+            input{
+                font-family: 'Source Sans 3';
+                font-size: 18px;
+                width: 60%;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+            .moradadois{
+                input{
+                    width: 60px;
+                    text-align: center;
+                }
+            }
+
+
+        }
+
+        #Destino{
+            margin-left: 5%;
+            font-family: 'Source Sans 3';
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 15px;
+
+            #destinodoacao{
+                font-family: 'Source Sans 3';
+                font-size: 18px;
+                width: 30%;
+
+            }
+        }
+
+    }
+
+}
